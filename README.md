@@ -11,8 +11,8 @@ Heres my current nvim config, all plugings were installed with Vim-plug, for my 
 
 ## Screenshots
 
-![App Screenshot](./NvimScreenshot.jpg)
-
+![App Screenshot](./samplePhotos/VimSample2.jpg)
+![App Screenshot](./samplePhotos/NvimScreenshot.jpg)
 
 ## Installation
 
@@ -30,7 +30,14 @@ Install the plugins with Plug install! To customize each to your liking visit th
   :PlugInstall
 ```
 
-  A MUST FOR SUPER SMOOTH WORKFLOW!! SET NERD TREE toggle TO CTRL + N while in vim. ( place inside init.vim file)
+  A MUST FOR SUPER SMOOTH WORKFLOW!! 
+
+  SET NERD TREE toggle TO CTRL + N while in vim. ( place inside init.vim file )
 ```bash
 nnoremap <C-n> :NERDTreeToggle<CR>
+```
+
+  Exits Vim if NERDTree is the only window remaining in the only tab. ( place inside init.vim file )
+```bash
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 ```
