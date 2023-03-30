@@ -17,6 +17,12 @@ Heres my current nvim config, all plugings were installed with Vim-plug, for my 
 ## Installation
 
 Install the plugins with Plug install! To customize each to your liking visit the links below!
+* Add to init.vim to disable Preview split  
+```bash
+  set completeopt-=preview
+
+```
+
 
 * Plugin install - https://github.com/junegunn/vim-plug
 * Syntax color - https://github.com/nvim-treesitter/nvim-treesitter
@@ -24,6 +30,7 @@ Install the plugins with Plug install! To customize each to your liking visit th
 * Devivons - https://github.com/ryanoasis/vim-devicons
 * Linter - https://github.com/dense-analysis/ale
 * Theme - https://vimcolorschemes.com
+* jsx-pretty - https://github.com/MaxMEllon/vim-jsx-pretty
 
 
 ```bash

@@ -11,6 +11,8 @@ call plug#begin("~/.vim/plugged")
   " Linter
   Plug 'dense-analysis/ale'
 
+  set completeopt-=preview
+
   " file tree plugin
   Plug 'preservim/nerdtree'
 
@@ -21,6 +23,8 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+
+Plug 'maxmellon/vim-jsx-pretty'
     
 Plug 'mhinz/vim-signify'
 
